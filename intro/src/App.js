@@ -1,8 +1,8 @@
 
 import './App.css';
-import Header from './Header/header'
-import Article from './article/Article'
-
+import Header from './Header/header';
+import Article from './article/Article';
+import Footer from './footer/Footer';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Header/>
       <Article/>
       <Article/>
+      <Footer/>
     </div>
   );
 }
