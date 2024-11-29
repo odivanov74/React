@@ -10,7 +10,7 @@ function Power(props)
     }
 
     return(
-        <h3>{a}<sup>{n}</sup> = {N};</h3>
+        <h3>Power: {a}<sup>{n}</sup> = {N};</h3>
     )
 }
 
