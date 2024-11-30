@@ -25,7 +25,7 @@ function Fibonachi(props)
             i_2Elem = temp;
         }
         sum = i_2Elem + i_1Elem;
-        arr.push(<div>{sum}</div>);
+        arr.push(<div key = {i}>{sum}</div>);
     }
     
     

@@ -7,7 +7,8 @@ function Article(props)
   
       //if(props.db["people"][0].pol == "male") icon = male;
       //else icon = female;
-
+      //console.log(2==2);
+      //console.log(2==="2");
        
     return (
       <div className='app'>
@@ -15,14 +16,14 @@ function Article(props)
           Object.keys(props.db["people"]).map(item =>
           { 
             let people = props.db["people"][item];
-            let icon = people.pol == "male" ? male : female;
+            let icon = people.pol === "male" ? male : female;
             
             //console.log(people);
             return(
-            <div className = "card">
+            <div className = "card" key={item}>
               <img src={people.photo} alt="" />
 
-              <div className="name">
+              <div className ="name">
                 {people.name + ' ' + people.surname}
               </div>
 

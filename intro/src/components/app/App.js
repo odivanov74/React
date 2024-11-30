@@ -1,7 +1,8 @@
 
 import './App.css';
 import Header from '../Header/header';
-import Nav from '../nav/Nav'
+import Nav from '../nav/Nav';
+import Switch from '../switch/Switch';
 import Article from '../article/Article';
 import Power from '../math/power/Power';
 import Factorial from '../math/factorial/Factorial';
@@ -26,11 +27,12 @@ function App() {
     <div className="App">
       <Header title="Hello React" description="This is my first React App. This phrase passed using parameters over 'PROPS'"/>
       <Nav navigation={nav}/>
+      <Switch/>
       <Power a={2} n={8}/>
       <Factorial a={10}/>
       <Fibonachi a={7}/>
       <Article db={db}/>      
-      <Footer/>
+      <Footer year="2024"/>
     </div>
   );
 }
