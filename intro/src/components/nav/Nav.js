@@ -8,6 +8,7 @@ function Nav(props)
                 {
                     Object.keys(props.navigation).map(elem => 
                      <li key={elem}><a href={props.navigation[elem]}>{elem}</a></li>
+                     //VirtualDOM
                     )
                 }
             </ul>            
